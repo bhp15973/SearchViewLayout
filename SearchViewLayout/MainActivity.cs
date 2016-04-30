@@ -18,7 +18,20 @@ namespace SearchViewLayout
 			var toolbar = FindViewById<Toolbar> (Resource.Id.toolbar);
 			SetSupportActionBar (toolbar);
 
-			//var searchViewLayout = FindViewById<Xyz.Sahildave.Widget.> ()
+			var searchViewLayout = FindViewById<Xyz.Sahildave.Widget.SearchViewLayout> (Resource.Id.search_view_container);
+			searchViewLayout.ToggleAnimationStarted += (sender, e) =>
+			{
+				if (e.Expanding)
+				{
+				}
+				else
+				{
+				}
+			};
+		}
+
+		void SearchViewLayout_Start (object sender, Xyz.Sahildave.Widget.SearchViewLayout.StartEventArgs e)
+		{
 		}
 	}
 }
