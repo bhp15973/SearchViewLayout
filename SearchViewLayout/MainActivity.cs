@@ -17,6 +17,8 @@ namespace SearchViewLayout
 
 			var toolbar = FindViewById<Toolbar> (Resource.Id.toolbar);
 			SetSupportActionBar (toolbar);
+
+			//var searchViewLayout = FindViewById<Xyz.Sahildave.Widget.> ()
 		}
 	}
 }
